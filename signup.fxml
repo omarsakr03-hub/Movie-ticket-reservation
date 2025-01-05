@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.signupcontroller">
+    <children>
+        <Label layoutX="50.0" layoutY="165.0" text="LastName :" />
+        <Label layoutX="70.0" layoutY="207.0" text="Age" />
+        <Label layoutX="43.0" layoutY="287.0" text="MobilePhone :" />
+        <Label layoutX="61.0" layoutY="30.0" text="Email : " />
+        <Label layoutX="50.0" layoutY="126.0" text="FirstName :" />
+        <Label layoutX="53.0" layoutY="78.0" text="Password :" />
+        <Button fx:id="submit" layoutX="178.0" layoutY="332.0" mnemonicParsing="false" onAction="#submitbuttonOnAction" text="submit" />
+        <ComboBox fx:id="gendercombobox" layoutX="155.0" layoutY="245.0" prefWidth="150.0" promptText="Pick your gender" />
+        <TextField fx:id="mobilephonetextfeild" layoutX="156.0" layoutY="283.0" promptText="MobilePhone " />
+        <Label layoutX="60.0" layoutY="249.0" text="Gender" />
+        <TextField fx:id="firstnametextfeild" layoutX="156.0" layoutY="122.0" promptText="FirstName " />
+        <TextField fx:id="agetextfeild" layoutX="156.0" layoutY="203.0" promptText="Age" />
+        <TextField fx:id="lastnamefeild" layoutX="156.0" layoutY="161.0" promptText="LastName" />
+        <TextField fx:id="emailtextfeild" layoutX="156.0" layoutY="26.0" prefHeight="26.0" prefWidth="150.0" promptText="Email" />
+        <PasswordField fx:id="passwordtextfeild" layoutX="156.0" layoutY="74.0" promptText="Password" />
+      <Label fx:id="emailmsglabel" layoutX="367.0" layoutY="35.0" textFill="RED" />
+      <Label fx:id="lastnamemsglabel" layoutX="367.0" layoutY="161.0" textFill="RED" />
+      <Label fx:id="firstnamemsglabel" layoutX="367.0" layoutY="122.0" textFill="RED" />
+      <Label fx:id="agemsglabel" layoutX="367.0" layoutY="203.0" textFill="RED" />
+      <Label fx:id="passwordmsglabel" layoutX="367.0" layoutY="74.0" textFill="RED" />
+      <Label fx:id="gendermsglabel" layoutX="367.0" layoutY="249.0" textFill="RED" />
+      <Label fx:id="mobilephonemsglabel" layoutX="367.0" layoutY="287.0" textFill="RED" />
+    </children>
+</AnchorPane>

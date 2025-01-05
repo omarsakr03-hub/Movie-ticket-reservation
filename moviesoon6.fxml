@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="596.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.moviesoon6controller">
+    <children>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="596.0" prefWidth="600.0" vbarPolicy="NEVER">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="603.0">
+                    <children>
+                        <ImageView fitHeight="300.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../images/comingsoon8.jpg" />
+                            </image>
+                        </ImageView>
+                        <Pane layoutX="241.0" layoutY="10.0" prefHeight="164.0" prefWidth="333.0">
+                            <children>
+                                <Label layoutY="10.0" text="Blackwater Lane">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutY="65.0" prefHeight="17.0" prefWidth="57.0" text="CRIME">
+                                    <font>
+                                        <Font name="Arial Bold" size="13.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutY="95.0" text="RATED +13">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="97.0" layoutY="95.0" text="108 MIN">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Label>
+                                <Separator layoutX="69.0" layoutY="95.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="25.0" />
+                        <Pane layoutY="122.0" prefHeight="26.0" prefWidth="123.0" style="-fx-border-color: gray; -fx-border-radius: 5; -fx-background-color: light gray;">
+                           <children>
+                              <Hyperlink fx:id="soon6trailer" layoutX="12.0" layoutY="2.0" onAction="#soon6trailer" text="Watch Trailer">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Hyperlink>
+                           </children>
+                        </Pane>
+                            </children>
+                        </Pane>
+                        <TabPane layoutX="241.0" layoutY="168.0" prefHeight="451.0" prefWidth="340.0" tabClosingPolicy="UNAVAILABLE">
+                            <tabs>
+                                <Tab text="Details">
+                                    <content>
+                                        <AnchorPane maxHeight="700.0" minHeight="0.0" minWidth="0.0" prefHeight="451.0" prefWidth="340.0">
+                                            <children>
+                                                <Label layoutX="10.0" layoutY="15.0" text="Description :">
+                                                    <font>
+                                                        <Font name="Arial" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextArea layoutX="10.0" layoutY="40.0" prefHeight="90.0" prefWidth="330.0" text="Late one night a woman drives by a stranded motorist &#10;who is later revealed to have been murdered. After a &#10;series of terrifying events the woman believes she is the &#10;killer's next victim." />
+                                                <Separator layoutX="20.0" layoutY="140.0" prefWidth="300.0" />
+                                                <Label layoutX="10.0" layoutY="150.0" text="Top cast :">
+                                                    <font>
+                                                        <Font name="Arial" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <Pane layoutX="10.0" layoutY="179.0" prefHeight="229.0" prefWidth="320.0">
+                                                    <children>
+                                                        <Pane layoutX="5.0" layoutY="5.0" prefHeight="130.0" prefWidth="105.0" style="-fx-background-color: light gray; -fx-background-radius: 10;">
+                                                            <children>
+                                                                <Label layoutX="21.0" layoutY="89.0" prefHeight="17.0" prefWidth="107.0" text="Minka Kelly">
+                                                                    <font>
+                                                                        <Font name="Arial Bold" size="13.0" />
+                                                                    </font>
+                                                                </Label>
+                                                                <Label layoutX="38.0" layoutY="106.0" prefHeight="17.0" prefWidth="90.0" text="Cass" textAlignment="CENTER">
+                                                                    <font>
+                                                                        <Font name="Arial" size="13.0" />
+                                                                    </font>
+                                                                </Label>
+                                                                <ImageView fitHeight="85.0" fitWidth="98.0" layoutX="4.0">
+                                                                    <image>
+                                                                        <Image url="@../../../images/MinkaKellysoon6.jpg" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </children>
+                                                        </Pane>
+                                                        <Pane layoutX="120.0" layoutY="5.0" prefHeight="130.0" prefWidth="105.0" style="-fx-background-color: light gray; -fx-background-radius: 10;">
+                                                            <children>
+                                                                <Label layoutX="1.0" layoutY="88.0" prefHeight="17.0" prefWidth="109.0" text="Dermot Mulroney">
+                                                                    <font>
+                                                                        <Font name="Arial Bold" size="13.0" />
+                                                                    </font>
+                                                                </Label>
+                                                                <Label layoutX="28.0" layoutY="108.0" prefHeight="17.0" prefWidth="89.0" text="Matthew" textAlignment="CENTER">
+                                                                    <font>
+                                                                        <Font name="Arial" size="13.0" />
+                                                                    </font>
+                                                                </Label>
+                                                                <ImageView fitHeight="85.0" fitWidth="98.0" layoutX="4.0">
+                                                                    <image>
+                                                                        <Image url="@../../../images/DermotMulroneysoon6.jpg" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </children>
+                                                        </Pane>
+                                                    </children>
+                                                </Pane>
+                                                <Separator layoutX="20.0" layoutY="320.0" prefWidth="300.0" />
+                                                <Label layoutX="10.0" layoutY="330.0" text="Director : Jeff Celentano">
+                                                    <font>
+                                                        <Font name="Arial" size="14.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="11.0" layoutY="360.0" text="Writer : Elizabeth Fowler">
+                                                    <font>
+                                                        <Font name="Arial" size="14.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </Tab>
+                            </tabs>
+                        </TabPane>
+                  <Button fx:id="backbutton" layoutX="14.0" layoutY="559.0" mnemonicParsing="false" onAction="#backbutton" text="Back" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

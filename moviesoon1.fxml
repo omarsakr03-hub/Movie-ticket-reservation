@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="596.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.moviesoon1controller">
+    <children>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="596.0" prefWidth="600.0" vbarPolicy="NEVER">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="596.0" prefWidth="603.0">
+                    <children>
+                        <ImageView fitHeight="300.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../images/comingsoon1.jpg" />
+                            </image>
+                        </ImageView>
+                        <Pane layoutX="241.0" layoutY="10.0" prefHeight="164.0" prefWidth="333.0">
+                            <children>
+                                <Label layoutY="10.0" text="Mickey 17">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutY="65.0" text="ADVENTURE">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Label>
+                                <Separator layoutX="78.0" layoutY="65.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="25.0" />
+                                <Label layoutX="96.0" layoutY="66.0" text="COMEDY">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutY="95.0" text="RATED +18">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="97.0" layoutY="95.0" text="139 MIN">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Label>
+                                <Separator layoutX="78.0" layoutY="95.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="25.0" />
+                        <Pane layoutY="122.0" prefHeight="26.0" prefWidth="123.0" style="-fx-border-color: gray; -fx-border-radius: 5; -fx-background-color: light gray;">
+                           <children>
+                              <Hyperlink fx:id="soon1trailer" layoutX="12.0" layoutY="2.0" onAction="#soon1trailer" prefHeight="22.0" prefWidth="99.0" text="Watch Trailer">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Hyperlink>
+                           </children>
+                        </Pane>
+                            </children>
+                        </Pane>
+                        <TabPane layoutX="241.0" layoutY="168.0" prefHeight="451.0" prefWidth="340.0" tabClosingPolicy="UNAVAILABLE">
+                            <tabs>
+                                <Tab text="Details">
+                                    <content>
+                                        <AnchorPane maxHeight="700.0" minHeight="0.0" minWidth="0.0" prefHeight="451.0" prefWidth="340.0">
+                                            <children>
+                                                <Label layoutX="10.0" layoutY="15.0" text="Description :">
+                                                    <font>
+                                                        <Font name="Arial" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextArea layoutX="10.0" layoutY="40.0" prefHeight="90.0" prefWidth="330.0" text="A return to speculative sci-fi fantasy for Bong Joon-ho, &#10;who went stratospheric with his Oscar-winning&#10; psychological satire Parasite. Adapted from the novel&#10; Mickey7 by Edward Ashton, this stars Robert Pattinson&#10; as an &quot;expendable&quot; - a disposable crew member on a &#10;space mission, selected for dangerous tasks because&#10; he can be renewed if his body dies, with his memories&#10; largely intact. With one regeneration, though, things go&#10; very wrong." />
+                                                <Separator layoutX="20.0" layoutY="140.0" prefWidth="300.0" />
+                                                <Label layoutX="10.0" layoutY="150.0" text="Top cast :">
+                                                    <font>
+                                                        <Font name="Arial" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <Pane layoutX="10.0" layoutY="179.0" prefHeight="229.0" prefWidth="320.0">
+                                                    <children>
+                                                        <Pane layoutX="5.0" layoutY="5.0" prefHeight="130.0" prefWidth="105.0" style="-fx-background-color: light gray; -fx-background-radius: 10;">
+                                                            <children>
+                                                                <Label layoutX="-3.0" layoutY="88.0" prefHeight="17.0" prefWidth="107.0" text="Robert Pattinson">
+                                                                    <font>
+                                                                        <Font name="Arial Bold" size="13.0" />
+                                                                    </font>
+                                                                </Label>
+                                                                <Label layoutX="10.0" layoutY="108.0" prefHeight="17.0" prefWidth="90.0" text="Mickey Barnes" textAlignment="CENTER">
+                                                                    <font>
+                                                                        <Font name="Arial" size="13.0" />
+                                                                    </font>
+                                                                </Label>
+                                                                <ImageView fitHeight="85.0" fitWidth="98.0" layoutX="4.0">
+                                                                    <image>
+                                                                        <Image url="@../../../images/RobertPattinsonsoon1.jpg" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </children>
+                                                        </Pane>
+                                                        <Pane layoutX="120.0" layoutY="5.0" prefHeight="130.0" prefWidth="105.0" style="-fx-background-color: light gray; -fx-background-radius: 10;">
+                                                            <children>
+                                                                <Label layoutX="13.0" layoutY="88.0" prefHeight="17.0" prefWidth="88.0" text="Naomi Ackie">
+                                                                    <font>
+                                                                        <Font name="Arial Bold" size="13.0" />
+                                                                    </font>
+                                                                </Label>
+                                                                <Label layoutX="10.0" layoutY="108.0" prefHeight="17.0" prefWidth="89.0" text="Nasha Adjaya" textAlignment="CENTER">
+                                                                    <font>
+                                                                        <Font name="Arial" size="13.0" />
+                                                                    </font>
+                                                                </Label>
+                                                                <ImageView fitHeight="85.0" fitWidth="98.0" layoutX="4.0">
+                                                                    <image>
+                                                                        <Image url="@../../../images/NaomiAckiesoon1.jpeg" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </children>
+                                                        </Pane>
+                                                    </children>
+                                                </Pane>
+                                                <Separator layoutX="20.0" layoutY="320.0" prefWidth="300.0" />
+                                                <Label layoutX="10.0" layoutY="330.0" text="Director : Bong Joon Ho">
+                                                    <font>
+                                                        <Font name="Arial" size="14.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="10.0" layoutY="360.0" text="Writer : Edward Ashton , Bong Joon Ho">
+                                                    <font>
+                                                        <Font name="Arial" size="14.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </Tab>
+                            </tabs>
+                        </TabPane>
+                  <Button fx:id="backbutton" layoutX="14.0" layoutY="557.0" mnemonicParsing="false" onAction="#backbutton" text="Back" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

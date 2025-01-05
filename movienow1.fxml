@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="596.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.movienow1controller">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="596.0" prefWidth="600.0" vbarPolicy="NEVER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="600.0">
+               <children>
+                  <ImageView fitHeight="300.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/now1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="241.0" layoutY="10.0" prefHeight="164.0" prefWidth="333.0">
+                     <children>
+                        <Label layoutY="11.0" text="TERRIFIER 3">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="65.0" text="HORROR">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="57.0" layoutY="65.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="25.0" />
+                        <Label layoutX="76.0" layoutY="66.0" text="DARK COMEDY">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="96.0" text="RATED +18">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="95.0" layoutY="97.0" text="125 MIN">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="70.0" layoutY="96.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="25.0" />
+                        <Pane layoutY="122.0" prefHeight="26.0" prefWidth="123.0" style="-fx-border-color: GRAY; -fx-border-radius: 5; -fx-background-color: LIGHT GRAY;">
+                           <children>
+                              <Hyperlink fx:id="now1trailer" layoutX="13.0" layoutY="-4.0" onAction="#now1trailer" prefHeight="35.0" prefWidth="94.0" text="watch trailer" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Hyperlink>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <TabPane layoutX="238.0" layoutY="164.0" prefHeight="451.0" prefWidth="340.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Showtimes">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="506.0" prefWidth="340.0">
+                                 <children>
+                                    <ToolBar layoutY="30.0" prefHeight="80.0" prefWidth="245.0">
+                                       <items>
+                                          <Button fx:id="regular5pm" layoutX="10.0" layoutY="32.0" mnemonicParsing="false" onAction="#regular5pmOnAction" text="05 : 00 PM" />
+                                          <Button fx:id="regular8pm" layoutX="90.0" layoutY="32.0" mnemonicParsing="false" onAction="#regular8pmOnAction" text="08 : 00 PM" />
+                                          <Button fx:id="regular12am" layoutX="169.0" layoutY="32.0" mnemonicParsing="false" onAction="#regular12amOnAction" text="12 : 00 AM" />
+                                       </items>
+                                    </ToolBar>
+                                    <Label layoutX="15.0" layoutY="10.0" text="Regular :">
+                                       <font>
+                                          <Font name="Arial Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="125.0" text="IMAX :">
+                                       <font>
+                                          <Font name="Arial Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <ToolBar layoutY="145.0" prefHeight="80.0" prefWidth="245.0">
+                                       <items>
+                                          <Button fx:id="imax5pm" layoutX="10.0" layoutY="32.0" mnemonicParsing="false" onAction="#imax5pmOnAction" text="05 : 00 PM" />
+                                          <Button fx:id="imax8pm" layoutX="90.0" layoutY="32.0" mnemonicParsing="false" onAction="#imax8pmOnAction" text="08 : 00 PM" />
+                                          <Button fx:id="imax12am" layoutX="169.0" layoutY="32.0" mnemonicParsing="false" onAction="#imax12amOnAction" text="12 : 00 AM" />
+                                       </items>
+                                    </ToolBar>
+                                    <Label layoutX="15.0" layoutY="230.0" text="GOLD :">
+                                       <font>
+                                          <Font name="Arial Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <ToolBar layoutY="250.0" prefHeight="80.0" prefWidth="245.0">
+                                       <items>
+                                          <Button fx:id="gold5pm" layoutX="10.0" layoutY="32.0" mnemonicParsing="false" onAction="#gold5pmOnAction" text="05 : 00 PM" />
+                                          <Button fx:id="gold8pm" layoutX="90.0" layoutY="32.0" mnemonicParsing="false" onAction="#gold8pmOnAction" text="08  : 00 PM" />
+                                          <Button fx:id="gold12am" layoutX="169.0" layoutY="32.0" mnemonicParsing="false" onAction="#gold12amOnAction" text="12 : 00 AM" />
+                                       </items>
+                                    </ToolBar>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Details">
+                        <content>
+                          <AnchorPane maxHeight="700.0" minHeight="0.0" minWidth="0.0" prefHeight="451.0" prefWidth="340.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="15.0" text="Description :">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextArea layoutX="10.0" layoutY="40.0" prefHeight="82.0" prefWidth="319.0" text="During a quiet Christmas Eve in Miles County, Art&#10; the Clown embarks on a new bloody journey, sprea&#10;ding chaos and terror among the residents as he con&#10;tinues his sadistic crimes." />
+                                    <Separator layoutX="20.0" layoutY="140.0" prefWidth="300.0" />
+                                    <Label layoutX="10.0" layoutY="150.0" text="Top cast :">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Pane layoutX="10.0" layoutY="179.0" prefHeight="229.0" prefWidth="320.0">
+                                       <children>
+                                          <Pane layoutX="5.0" layoutY="5.0" prefHeight="130.0" prefWidth="105.0" style="-fx-background-color: light gray; -fx-background-radius: 10;">
+                                             <children>
+                                                <Label layoutX="13.0" layoutY="88.0" prefHeight="17.0" prefWidth="88.0" text="David Howard ">
+                                                   <font>
+                                                      <Font name="Arial" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="23.0" layoutY="108.0" prefHeight="17.0" prefWidth="62.0" text="the Clown" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font name="Arial" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="85.0" fitWidth="98.0" layoutX="4.0">
+                                                   <image>
+                                                      <Image url="@../../../images/davidhowardnow1.jpeg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="120.0" layoutY="5.0" prefHeight="130.0" prefWidth="105.0" style="-fx-background-color: light gray; -fx-background-radius: 10;">
+                                             <children>
+                                                <Label layoutX="10.0" layoutY="85.0" prefHeight="17.0" prefWidth="88.0" text="Lauren LaVera">
+                                                   <font>
+                                                      <Font name="Arial" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="29.0" layoutY="108.0" prefHeight="17.0" prefWidth="48.0" text="Sienna" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font name="Arial" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="85.0" fitWidth="98.0" layoutX="4.0">
+                                                   <image>
+                                                      <Image url="@../../../images/LaurenLaVeranow1.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <Separator layoutX="20.0" layoutY="320.0" prefWidth="300.0" />
+                                    <Label layoutX="10.0" layoutY="330.0" text="Director : Damien Leone">
+                                       <font>
+                                          <Font name="Arial" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="360.0" text="Writer : Damien Leone">
+                                       <font>
+                                          <Font name="Arial" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+                  <Button fx:id="backbutton" layoutX="14.0" layoutY="541.0" mnemonicParsing="false" onAction="#backbutton" text="Back" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

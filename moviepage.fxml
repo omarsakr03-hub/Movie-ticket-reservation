@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.moviespagecontroller">
+   <children>
+      <ScrollPane hbarPolicy="ALWAYS" prefHeight="978.0" prefWidth="800.0" vbarPolicy="ALWAYS">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1190.0" prefWidth="800.0">
+               <children>
+                  <AnchorPane prefHeight="250.0" prefWidth="600.0" AnchorPane.topAnchor="50.0">
+                     <children>
+                        <ImageView fx:id="movieImageView" fitHeight="285.0" fitWidth="657.0" layoutX="71.0" layoutY="-33.0" />
+                        <Label fx:id="movieDetailsLabel" layoutY="-8.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutY="307.0" style="-fx-border-color: GRAY; -fx-border-radius: 5;" text="NOW SHOWING :">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane hbarPolicy="ALWAYS" layoutY="340.0" prefHeight="344.0" prefWidth="800.0" vbarPolicy="NEVER" AnchorPane.topAnchor="340.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="310.0" prefWidth="1417.0" style="-fx-background-color: light;">
+                           <children>
+                              <AnchorPane prefHeight="300.0" prefWidth="200.0" AnchorPane.leftAnchor="15.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="movienow1" mnemonicParsing="false" onAction="#movienow1OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/now1.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="250.0" prefHeight="300.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="movienow2" mnemonicParsing="false" onAction="#movienow2OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/now2.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="485.0" prefHeight="300.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="movienow3" mnemonicParsing="false" onAction="#movienow3OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/now3.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="720.0" prefHeight="300.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="movienow4" mnemonicParsing="false" onAction="#movienow4OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/now4.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="955.0" prefHeight="300.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="movienow5" mnemonicParsing="false" onAction="#movienow5OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/now5.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="1190.0" prefHeight="300.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="movienow6" mnemonicParsing="false" onAction="#movienow6OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/now6.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane hbarPolicy="ALWAYS" layoutY="730.0" prefHeight="344.0" prefWidth="800.0" vbarPolicy="NEVER">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="310.0" prefWidth="1900.0" style="-fx-background-color: light;">
+                           <children>
+                              <AnchorPane prefHeight="300.0" prefWidth="200.0" AnchorPane.leftAnchor="15.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="moviesoon1" mnemonicParsing="false" onAction="#moviesoon1OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/comingsoon1.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="250.0" prefHeight="300.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="moviesoon2" mnemonicParsing="false" onAction="#moviesoon2OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/comingsoon3.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="485.0" prefHeight="300.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="moviesoon3" mnemonicParsing="false" onAction="#moviesoon3OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/comingsoon4.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="720.0" prefHeight="300.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="moviesoon4" mnemonicParsing="false" onAction="#moviesoon4OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/comingsoon5.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="955.0" prefHeight="300.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="moviesoon5" mnemonicParsing="false" onAction="#moviesoon5OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/comingsoon6.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="1190.0" prefHeight="300.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="moviesoon6" mnemonicParsing="false" onAction="#moviesoon6OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/comingsoon8.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="1660.0" prefHeight="300.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="moviesoon7" mnemonicParsing="false" onAction="#moviesoon7OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/comingsoon10.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="1425.0" prefHeight="300.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane layoutY="270.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: black;">
+                                       <children>
+                                          <Label layoutX="3.0" text="NAME OF MOVIE " />
+                                          <Label layoutY="25.0" prefHeight="17.0" prefWidth="55.0" text="GENRA" />
+                                          <Label layoutX="61.0" layoutY="-25.0" prefHeight="17.0" prefWidth="55.0" text=".">
+                                             <font>
+                                                <Font size="64.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="104.0" layoutY="25.0" prefHeight="17.0" prefWidth="73.0" text="RATE AGE" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="moviesoon8" mnemonicParsing="false" onAction="#moviesoon8OnAction" prefHeight="250.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="244.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <image>
+                                                <Image url="@../../../images/Mufasasoon7.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <Label layoutY="690.0" style="-fx-border-color: GRAY; -fx-border-radius: 5;" text="COMING SOON :">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

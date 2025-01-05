@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="453.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.PaymentController">
+    <children>
+        <Label layoutX="147.0" layoutY="30.0" text="Payment Information">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+
+        <Label layoutX="38.0" layoutY="92.0" text="Card Number:" />
+        <TextField fx:id="cardNumberField" layoutX="168.0" layoutY="92.0" prefWidth="200" />
+
+        <Label layoutX="38.0" layoutY="136.0" text="Card Holder:" />
+        <TextField fx:id="cardHolderField" layoutX="168.0" layoutY="136.0" prefWidth="200" />
+
+        <Label layoutX="38.0" layoutY="180.0" text="CVV:" />
+        <TextField fx:id="cvvField" layoutX="168.0" layoutY="180.0" prefWidth="100" />
+
+        <Label layoutX="38.0" layoutY="227.0" text="Expiration Month (MM):" />
+        <TextField fx:id="expirationMonthField" layoutX="168.0" layoutY="227.0" prefWidth="50" />
+
+        <Label layoutX="238.0" layoutY="227.0" text="Expiration Year (YY):" />
+        <TextField fx:id="expirationYearField" layoutX="368.0" layoutY="227.0" prefWidth="50" />
+
+        <Button fx:id="submitbutton" layoutX="38.0" layoutY="286.0" onAction="#handleSubmit" text="Submit" />
+      <Label fx:id="messageLabel1" layoutX="167.0" layoutY="118.0" prefHeight="18.0" prefWidth="200.0" textFill="red" />
+      <Label fx:id="messageLabel2" layoutX="168.0" layoutY="162.0" prefHeight="18.0" prefWidth="200.0" textFill="red" />
+      <Label fx:id="messageLabel3" layoutX="167.0" layoutY="206.0" prefHeight="18.0" prefWidth="200.0" textFill="red" />
+      <Label fx:id="messageLabel4" layoutX="168.0" layoutY="253.0" prefHeight="18.0" prefWidth="250.0" textFill="red" />
+      <Label fx:id="messageLabel" layoutX="38.0" layoutY="318.0" prefHeight="18.0" prefWidth="382.0" textFill="#00ff23" />
+    </children>
+</AnchorPane>

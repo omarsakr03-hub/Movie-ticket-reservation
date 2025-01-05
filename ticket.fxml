@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="402.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.ticketcontroller">
+    <children>
+        <ImageView fitHeight="402.0" fitWidth="708.0" layoutY="-1.0">
+            <image>
+                <Image url="@../../../images/TICKET.jpeg" />
+            </image>
+        </ImageView>
+        <Label fx:id="moviename" layoutX="128.0" layoutY="67.0" prefHeight="55.0" prefWidth="326.0" text="moviename">
+            <font>
+                <Font name="Bernard MT Condensed" size="50.0" />
+            </font>
+        </Label>
+        <Label fx:id="date" layoutX="333.0" layoutY="260.0" prefHeight="0.0" prefWidth="134.0" text="31/12">
+            <font>
+                <Font name="Bernard MT Condensed" size="23.0" />
+            </font>
+        </Label>
+        <Label fx:id="time" layoutX="228.0" layoutY="169.0" prefHeight="30.0" prefWidth="88.0" text="12 am">
+            <font>
+                <Font name="Bernard MT Condensed" size="23.0" />
+            </font>
+        </Label>
+        <Label fx:id="screennumber" layoutX="139.0" layoutY="260.0" prefHeight="28.0" prefWidth="94.0" text="screennum" textAlignment="CENTER">
+            <font>
+                <Font name="Bernard MT Condensed" size="23.0" />
+            </font>
+        </Label>
+        <Label fx:id="category" layoutX="232.0" layoutY="260.0" prefHeight="30.0" prefWidth="94.0" text="category">
+            <font>
+                <Font name="Bernard MT Condensed" size="23.0" />
+            </font>
+        </Label>
+        <Label fx:id="seats" layoutX="500.0" layoutY="274.0" prefHeight="60.0" prefWidth="208.0" text="A1 A3 A9">
+            <font>
+                <Font name="Bernard MT Condensed" size="23.0" />
+            </font>
+        </Label>
+        <Label fx:id="price" layoutX="513.0" layoutY="141.0" prefHeight="28.0" prefWidth="94.0" text="150" textAlignment="CENTER">
+            <font>
+                <Font name="Bernard MT Condensed" size="23.0" />
+            </font>
+        </Label>
+        <Label fx:id="agelimit" layoutX="128.0" layoutY="169.0" prefHeight="30.0" prefWidth="105.0" text="duration">
+            <font>
+                <Font name="Bernard MT Condensed" size="23.0" />
+            </font>
+        </Label>
+        <Label fx:id="duration" layoutX="321.0" layoutY="169.0" prefHeight="30.0" prefWidth="141.0" text="agelimit">
+            <font>
+                <Font name="Bernard MT Condensed" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="500.0" layoutY="243.0" text="seats number : ">
+            <font>
+                <Font name="Bernard MT Condensed" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="493.0" layoutY="91.0" prefHeight="28.0" prefWidth="183.0" text="Total amount paid :">
+            <font>
+                <Font name="Bernard MT Condensed" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="615.0" layoutY="141.0" text="LE">
+            <font>
+                <Font name="Bernard MT Condensed" size="23.0" />
+            </font>
+        </Label>
+        <Separator layoutX="226.0" layoutY="166.0" orientation="VERTICAL" prefHeight="34.0" prefWidth="0.0" />
+        <Separator layoutX="316.0" layoutY="166.0" orientation="VERTICAL" prefHeight="34.0" prefWidth="0.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.imaxcinemacontroller">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <ToolBar layoutY="360.0" prefHeight="40.0" prefWidth="600.0">
+                    <items>
+                        <Button fx:id="backbutton" maxHeight="26.0" maxWidth="55.0" mnemonicParsing="false" onAction="#handleBackButton" text="back" />
+                        <Button fx:id="checkoutbutton" layoutX="10.0" layoutY="12.0" maxHeight="26.0" maxWidth="100.0" mnemonicParsing="false" onAction="#handleCheckoutButton" text="CHECKOUT" />
+                    </items>
+                </ToolBar>
+                <SplitPane prefHeight="360.0" prefWidth="600.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="600.0">
+                            <children>
+                                <SplitPane dividerPositions="0.5153631284916201" layoutX="-10.0" orientation="VERTICAL" prefHeight="360.0" prefWidth="200.0">
+                                    <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                            <children>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="194.0">
+                                       <children>
+                                          <ImageView fx:id="imaximg" fitHeight="150.0" fitWidth="123.0" layoutX="57.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label fx:id="imaxlabel" layoutX="11.0" layoutY="161.0" prefHeight="18.0" prefWidth="179.0" textAlignment="CENTER" />
+                                       </children>
+                                                </AnchorPane>
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="168.0" prefWidth="177.0">
+                                            <children>
+                                                <ScrollPane layoutX="21.0" layoutY="29.0" prefHeight="134.0" prefWidth="165.0">
+                                                    <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="151.0">
+                                                            <children>
+                                                                <ListView fx:id="StandardListView" prefHeight="200.0" prefWidth="200.0" />
+                                                            </children></AnchorPane>
+                                                    </content>
+                                                </ScrollPane>
+                                                <Label fx:id="totalLabel" layoutX="38.0" layoutY="6.0" prefHeight="18.0" prefWidth="85.0" text="TOTAL :" />
+                                                <Label layoutX="122.0" layoutY="6.0" text="AMOUNT" />
+                                            </children>
+                                        </AnchorPane>
+                                    </items>
+                                </SplitPane>
+                                <Separator layoutX="187.0" orientation="VERTICAL" prefHeight="360.0" prefWidth="16.0" />
+                                <Pane layoutX="194.0" layoutY="1.0" prefHeight="357.0" prefWidth="405.0" style="-fx-background-color: #a4a6b0;">
+                                    <children>
+                                        <CubicCurve controlX1="-188.6461181640625" controlX2="198.6131591796875" controlY1="-55.41984939575195" controlY2="-55.41984939575195" endX="198.6131591796875" endY="7.62939453125E-6" fill="#1f2225" layoutX="191.0" layoutY="59.0" startX="-188.6461181640625" startY="7.62939453125E-6" stroke="BLACK" />
+                                        <ToggleButton fx:id="toggleButton1" layoutX="35.0" layoutY="115.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="A1" textAlignment="CENTER">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton2" layoutX="62.0" layoutY="115.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="A2">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton3" layoutX="116.0" layoutY="115.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="A3">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton4" layoutX="143.0" layoutY="115.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="A4">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton5" layoutX="170.0" layoutY="115.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="A5">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton6" layoutX="197.0" layoutY="115.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="A6">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton7" layoutX="224.0" layoutY="115.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="A7">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton8" layoutX="251.0" layoutY="115.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="A8">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton9" layoutX="305.0" layoutY="115.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="A9">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton10" layoutX="332.0" layoutY="115.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="A10">
+                                            <font>
+                                                <Font size="7.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton11" layoutX="35.0" layoutY="145.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="B1">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton12" layoutX="62.0" layoutY="145.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="B2">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton13" layoutX="116.0" layoutY="145.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="B3">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton14" layoutX="143.0" layoutY="145.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="B4">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton15" layoutX="170.0" layoutY="145.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="B5">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton16" layoutX="197.0" layoutY="145.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="B6">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton17" layoutX="224.0" layoutY="145.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="B7">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton18" layoutX="251.0" layoutY="145.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="B8">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton19" layoutX="305.0" layoutY="145.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="B9">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton20" layoutX="332.0" layoutY="145.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="B10">
+                                            <font>
+                                                <Font size="7.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton21" layoutX="35.0" layoutY="175.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="C1">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton22" layoutX="62.0" layoutY="175.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="C2">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton23" layoutX="116.0" layoutY="175.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="C3">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton24" layoutX="143.0" layoutY="175.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="C4">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton25" layoutX="170.0" layoutY="175.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="C5">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton26" layoutX="197.0" layoutY="175.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="C6">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton27" layoutX="224.0" layoutY="175.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="C7">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton28" layoutX="251.0" layoutY="175.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="C8">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton29" layoutX="305.0" layoutY="175.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="C9">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton30" layoutX="332.0" layoutY="175.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="C10">
+                                            <font>
+                                                <Font size="7.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton31" layoutX="36.0" layoutY="236.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="D1">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton32" layoutX="63.0" layoutY="236.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="D2">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton33" layoutX="117.0" layoutY="236.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="D3">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton34" layoutX="144.0" layoutY="236.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="D4">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton35" layoutX="171.0" layoutY="236.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="D5">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton36" layoutX="198.0" layoutY="236.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="D6">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton37" layoutX="225.0" layoutY="236.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="D7">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton38" layoutX="252.0" layoutY="236.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="D8">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton39" layoutX="306.0" layoutY="236.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="D9">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton40" layoutX="333.0" layoutY="236.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="D10">
+                                            <font>
+                                                <Font size="7.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton41" layoutX="36.0" layoutY="266.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="E1">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton42" layoutX="63.0" layoutY="266.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="E2">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton43" layoutX="117.0" layoutY="266.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="E3">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton44" layoutX="144.0" layoutY="266.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="E4">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton45" layoutX="171.0" layoutY="266.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="E5">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton46" layoutX="198.0" layoutY="266.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="E6">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton47" layoutX="225.0" layoutY="266.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="E7">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton48" layoutX="252.0" layoutY="266.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="E8">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton49" layoutX="306.0" layoutY="266.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="E9">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton50" layoutX="333.0" layoutY="266.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="E10">
+                                            <font>
+                                                <Font size="7.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton51" layoutX="36.0" layoutY="296.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="F1">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton52" layoutX="63.0" layoutY="296.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="F2">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton53" layoutX="117.0" layoutY="296.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="F3">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton54" layoutX="144.0" layoutY="296.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="F4">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton55" layoutX="171.0" layoutY="296.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="F5">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton56" layoutX="198.0" layoutY="296.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="F6">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton57" layoutX="225.0" layoutY="296.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="F7">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton58" layoutX="252.0" layoutY="296.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="F8">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton59" layoutX="306.0" layoutY="296.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="F9">
+                                            <font>
+                                                <Font size="8.0" />
+                                            </font>
+                                        </ToggleButton>
+                                        <ToggleButton fx:id="toggleButton60" layoutX="333.0" layoutY="296.0" maxHeight="25.0" maxWidth="23.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="F10">
+                                            <font>
+                                                <Font size="7.0" />
+                                            </font>
+                                        </ToggleButton>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>
